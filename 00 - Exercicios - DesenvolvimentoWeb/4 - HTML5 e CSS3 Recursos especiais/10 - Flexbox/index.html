@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Container HTML</title>
+
+    <style type="text/css">
+
+        #conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+
+            /* FLEX-DIRECTION: */
+            /*
+            row | row-reverse | column | column-reverse
+            */
+            /*flex-direction: row;*/
+            
+            /* FLEX-WRAP: */
+            /*
+            nowrap | wrap | wrap-reverse
+            */
+            /*flex-wrap: nowrap;*/
+
+
+            /* JUSTIFY-CONTENT: */
+            /*
+            flex-start | flex-end | center | space-between | space-around
+            */
+            /*justify-content: flex-start;*/
+
+
+            /* ALIGN-ITEMS: */
+            /*
+            stretch | center | flex-start | flex-end | baseline
+            */
+            /*align-items: stretch;*/
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+
+            /* Define proporção de espaço ocupado por um item, */
+            flex-grow: 0;
+
+            /* Define a capacidade de redução de tamanho do item. */
+            flex-shrink: 1;
+
+            /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante. */
+            flex-basis: 100px;
+        }
+
+        /* .item1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .item2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .item3 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .ordem1 {
+            order: 1;
+        }
+
+        .ordem2 {
+            order: 2;
+        }
+
+        .ordem3 {
+            order: 3;
+        }
+
+        .ordem4 {
+            order: 4;
+        }
+
+        .ordem {
+            order: 0;
+        } */
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item item1">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+
+</body>
+</html>
